@@ -25,7 +25,7 @@ const Reports = () => {
     });
 
     // Get total leads in pipeline
-    axios.get("http://localhost:3000/report/pipeline").then((res) => {
+    axios.get("https://major-project-two-backend.vercel.app/report/pipeline").then((res) => {
       setPipelineCount(res.data.totalLeadsInPipeline);
     });
   }, []);
